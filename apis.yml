@@ -1,7 +1,29 @@
 aid: bayapay-sdn-bhd
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bayapay-sdn-bhd.png
 name: Bayapay Sdn Bhd
-description: Bayapay Sdn Bhd is a company surfaced as a portfolio company of 500-global and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  BayaPay Sdn Bhd is a Malaysian fintech (incorporated 2021, registration 202101021154 /
+  1421454-H, based in Subang Jaya, Selangor) building programmable, permission-based business
+  and vehicle expense management on an open-loop prepaid Mastercard. Its flagship BayaFuel
+  FuelFleet programme gives fleet operators, SMBs, corporate teams and gig workers real-time
+  spend controls, customizable limits, fraud deterrence and digitized expense tracking across
+  fuel, travel and operational spend. The reloadable prepaid card is issued under license from
+  Instapay Technologies Sdn Bhd (a Bank Negara Malaysia e-money issuer and Mastercard
+  Asia/Pacific licensee), and BayaPay is one of the first Full Functional Open-Loop payment
+  solutions in the APAC region. A 500 Global portfolio company. The public site is Wix-powered
+  and exposes an agent-accessible llms.txt and a hosted Wix Site MCP endpoint; no bespoke
+  BayaPay developer/payments API is publicly documented at this time.
 url: https://raw.githubusercontent.com/api-evangelist/bayapay-sdn-bhd/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +33,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Payments
+- Fintech
+- Prepaid Cards
+- Expense Management
+- Fleet
+- Mastercard
+- Malaysia
+- APAC
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +51,25 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/bayapay-sdn-bhd-domain-security.yml
+- type: MCPServer
+  name: BayaPay Wix Site MCP
+  url: mcp/bayapay-sdn-bhd-mcp.yml
+- type: LLMsTxt
+  url: llms/bayapay-sdn-bhd-llms.txt
 - type: Website
   url: https://bayapay.com
+- type: Support
+  url: https://www.bayapay.com/frequently-asked-questions
+- type: TermsOfService
+  url: https://www.bayapay.com/termsofuse
+- type: PrivacyPolicy
+  url: https://www.bayapay.com/privacypolicy
+- type: LinkedIn
+  url: https://www.linkedin.com/company/bayapay/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
